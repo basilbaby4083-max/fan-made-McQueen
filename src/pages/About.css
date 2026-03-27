@@ -1,0 +1,107 @@
+/* ===== ABOUT SECTION ===== */
+.about {
+  margin-top: 60px;
+  padding: 30px;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: rgba(255, 0, 0, 0.08);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.3);
+  text-align: center;
+
+  animation: fadeUp 1s ease;
+}
+
+/* ===== HEADING ===== */
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+
+  background: linear-gradient(90deg, red, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: glow 2s infinite alternate;
+}
+
+/* ===== PARAGRAPH ===== */
+.about p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #ddd;
+  margin-bottom: 15px;
+
+  animation: fadeText 1.2s ease;
+}
+
+/* ===== SIGNATURE ===== */
+.signature {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 17px;
+  color: #fff;
+
+  text-shadow: 0 0 10px red;
+}
+
+/* ===== HOVER EFFECT ===== */
+.about:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 35px rgba(255, 0, 0, 0.5);
+  transition: 0.4s;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px red;
+  }
+  to {
+    text-shadow: 0 0 20px yellow;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .about {
+    padding: 20px;
+    margin-top: 40px;
+  }
+
+  .about h2 {
+    font-size: 24px;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+
+  .signature {
+    font-size: 15px;
+  }
+}
