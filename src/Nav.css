@@ -667,3 +667,104 @@ body {
     opacity: 0.6;
   }
 }
+/* ✅ MID MOBILE (465px) */
+@media (max-width: 465px) {
+
+  .main-container-nav {
+    padding: 18px 16px;
+  }
+
+  /* NAV */
+  .container-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .user_container {
+    width: 45px;
+    height: 45px;
+  }
+
+  .user_container img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .heading-img img {
+    max-width: 230px;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  /* HERO */
+  .hero-section {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .mini-title {
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+
+  .hero-section h2 {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .hero-text {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* BUTTONS */
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  /* IMAGE */
+  .bg-img {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110%;
+    height: auto;
+
+    object-fit: contain;
+    object-position: center;
+
+    opacity: 0.9;
+    animation: none;
+  }
+
+  /* CAPTION */
+  .caption h2 {
+    font-size: 36px;
+    transform: none;
+  }
+
+  /* PERFORMANCE */
+  .overlay {
+    animation: none;
+  }
+
+  .main-container-nav::after {
+    display: none;
+  }
+}
