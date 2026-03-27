@@ -382,3 +382,78 @@
     height: 120px;
   }
 }
+
+/* ✅ MOBILE MID (375px - iPhone size) */
+@media (max-width: 375px) {
+
+  .main-explor-container {
+    padding: 35px 16px;
+  }
+
+  .main-explor-container h2 {
+    font-size: 26px;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+  }
+
+  /* FIRST SECTION */
+  .conclusion {
+    flex-direction: column;
+    gap: 22px;
+    padding: 22px 16px;
+    text-align: center;
+  }
+
+  .conclusion p {
+    font-size: 14.5px;
+    line-height: 1.6;
+  }
+
+  .conclusion img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* SECOND SECTION */
+  .second-conclusion {
+    padding: 35px 16px;
+    gap: 22px;
+  }
+
+  .second-conclusion p {
+    font-size: 14.5px;
+    line-height: 1.7;
+  }
+
+  .second-conclusion img {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* LAST SECTION */
+  .Last {
+    flex-direction: column;
+    gap: 22px;
+    padding: 22px 16px;
+    margin: 45px auto;
+    text-align: center;
+  }
+
+  .Last p {
+    font-size: 14.5px;
+    line-height: 1.7;
+  }
+
+  .IMg-mc img {
+    width: 100%;
+    max-width: 280px;
+    transform: none;
+  }
+
+  /* REMOVE HEAVY EFFECTS FOR PERFORMANCE */
+  .Last::before,
+  .Last::after,
+  .second-conclusion::after {
+    display: none;
+  }
+}
